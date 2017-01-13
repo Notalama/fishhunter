@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FishHunter</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="libs/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="top_header">
+					<div class="col-md-2 col-sm-2 hidden-xs">
+						<div class="header_left">
+							<a href="#">My account <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+						</div>
+					</div>
+					<div class="col-md-2 col-md-offset-3 col-sm-offset-3 col-sm-2 col-xs-12">
+						<div class="header_center">
+							<a href="#"><img src="img/logo.png" alt="logo FishHunter"></a>
+						</div>
+					</div>
+					<div class="hidden-sm hidden-md hidden-lg col-xs-12 ">
+						<div class="header_left">
+							<a href="#">My account <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-offset-2 col-sm-offset-2 col-sm-3 col-xs-12">
+						<div class="header_right">
+							<a href="#"><img src="img/cart.png" alt="icon">my cart - $0.00</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="top_nav">
+			<div class="container">
+				<div class="row">
+					<ul>
+						<li><a href="#" class="nav_a">home</a></li>
+						<li><a href="#" class="nav_a">bundesland</a></li>
+						<li><a href="#" class="nav_a">angelshop</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="top_sect">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
+						<div class="search">
+							<input type="search" placeholder="Enter your keyword"><input type="submit" value="SUCHEN">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>top Gewässer bei fangfinder</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="filter_div controls">
+					<ul id="get">
+						<li class="filter active" data-filter=".category-3">Date created</li>
+						<li class="filter" data-filter=".category-1">top rating</li>
+						<li class="filter" data-filter=".category-2">most rewievs</li>
+					</ul>
+				</div>
+				<div id="portfolio_grid">
+					<div class="mix portfolio_item category-1 category-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="frst_img_block"></div>
+						<div class="port_desc">
+							<script>
+								$(document).ready(function() { 
+									$(".star_rating i").mouseenter(function(){
+										$(this).css({"color":"#ffaa00"});
+										$(this).prevAll().css({"color":"#ffaa00"});
+									});
+									$(".star_rating i").mouseleave(function(){
+										$(this).css({"color":"#bbb"});
+										$(this).prevAll().css({"color":"#bbb"});
+									});
+									$(".star_rating i").click(function(){
+										$(this).addClass("important");
+										$(this).prevAll().addClass("important");
+									});
+								});
+							</script>
+							<span class="star_rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</span>
+							<h5>Volkspark Bokel</h5>
+							<p>5,00 €</p>
+						</div>
+					</div>
+					<div class="mix portfolio_item category-2 category-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="scnd_img_block"></div>
+						<div class="port_desc">
+							<span class="star_rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</span>
+							<h5>Volkspark Bokel</h5>
+							<p>5,00 €</p>
+						</div>
+					</div>
+					<div class="mix portfolio_item category-1 category-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="thrd_img_block"></div>
+						<div class="port_desc">
+							<span class="star_rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</span>
+							<h5>Volkspark Bokel</h5>
+							<p>5,00 €</p>
+						</div>
+					</div>
+					<div class="mix portfolio_item category-2 category-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="frth_img_block"></div>
+						<div class="port_desc">
+							<span class="star_rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</span>
+							<h5>Volkspark Bokel</h5>
+							<p>5,00 €</p>
+						</div>
+					</div>
+					<div class="mix portfolio_item category-2 category-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="thrd_img_block"></div>
+						<div class="port_desc">
+							<span class="star_rating" >
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</span>
+							<h5>Volkspark Bokel</h5>
+							<p>5,00 €</p>
+						</div>
+					</div>
+					<div class="mix portfolio_item category-2 category-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="scnd_img_block"></div>
+						<div class="port_desc">
+							<span class="star_rating" >
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</span>
+							<h5>Volkspark Bokel</h5>
+							<p>5,00 €</p>
+						</div>
+					</div>
+					<div class="mix portfolio_item category-2 category-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="frst_img_block"></div>
+						<div class="port_desc">
+							<span class="star_rating" >
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</span>
+							<h5>Volkspark Bokel</h5>
+							<p>5,00 €</p>
+						</div>
+					</div>
+					<div class="mix portfolio_item category-1 category-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="scnd_img_block"></div>
+						<div class="port_desc">
+							<span class="star_rating" >
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</span>
+							<h5>Volkspark Bokel</h5>
+							<p>5,00 €</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="regions_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="regions first_part">
+						<div class="reg_cont">
+							<h5>Fishing</h5>
+							<h3>Regions</h3>
+							<div class="regions_btn">SEE ALL</div>
+						</div>
+					</div>
+					<div class="regions second_part">
+						<div class="reg_cont">
+							<h5>Fishing</h5>
+							<h3>Regions</h3>
+							<div class="regions_btn">SEE ALL</div>
+						</div>
+					</div>
+					<div class="regions third_part">
+						<div class="reg_cont">
+							<h5>Fishing</h5>
+							<h3>Regions</h3>
+							<div class="regions_btn">SEE ALL</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="steps">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Der Einfache Weg Zur Angelkarte</h3>
+					<div class="all_steps">
+						<div class="col-md-4">
+							<div class="step_cont first_step">
+								<img src="img/portrait.png" alt="portrait">
+								<h5>Registrieren</h5>
+								<p>Einfach registrieren mit Facebook, Google oder E-Mail-Adresse.</p>
+							</div>
+							<div class="divider"></div>
+						</div>
+						<div class="col-md-4">
+							<div class="step_cont">
+								<img src="img/fish.png" alt="portrait">
+								<h5>EINREICHEN</h5>
+								<p>Die Fischerei-Berechtigungen können als Foto
+									oder Scan unkompliziert hochgeladen werden.</p>
+								</div>
+								<div class="divider"></div>
+							</div>
+							<div class="col-md-4">
+								<div class="step_cont">
+									<img src="img/paysystem.png" alt="portrait">
+									<h5>BEZAHLEN</h5>
+									<p>Bequem mit Paypal, Kreditkarte oder Sofortüberweisung bezahlen und Angelkarte ausdrucken.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
+		<section class="angelshop">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="slide_top_cont">
+							<div class="arrow_cont"><div class="deep_cont"></div></div><h3>Unser angelshop</h3>
+						</div>
+						<div class="angelshop_slider">
+							<div class="slide_content">
+								<div class="col-md-6 col-sm-6 fslide">
+									<div class="left_side clearfix col-md-12">
+										<div class="frst_img_block"></div>
+										<div class="offer_desc">
+											<span class="star_rating" >
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</span>
+											<h5>Volkspark Bokel</h5>
+											<p>5,00 €</p>
+											<div class="offer_btns">
+												<button>
+													<span class="glyphicon glyphicon-shopping-cart"></span><span> ADD TO CART</span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-heart-empty"></span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-random"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="left_side clearfix col-md-12">
+										<div class="scnd_img_block"></div>
+										<div class="offer_desc">
+											<span class="star_rating" >
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</span>
+											<h5>Volkspark Bokel</h5>
+											<p>5,00 €</p>
+											<div class="offer_btns">
+												<button>
+													<span class="glyphicon glyphicon-shopping-cart"></span><span> ADD TO CART</span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-heart-empty"></span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-random"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 fslide">
+									<div class="left_side clearfix col-md-12">
+										<div class="thrd_img_block"></div>
+										<div class="offer_desc">
+											<span class="star_rating" >
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</span>
+											<h5>Volkspark Bokel</h5>
+											<p>5,00 €</p>
+											<div class="offer_btns">
+												<button>
+													<span class="glyphicon glyphicon-shopping-cart"></span><span> ADD TO CART</span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-heart-empty"></span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-random"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="left_side clearfix col-md-12">
+										<div class="frth_img_block"></div>
+										<div class="offer_desc">
+											<span class="star_rating" >
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</span>
+											<h5>Volkspark Bokel</h5>
+											<p>5,00 €</p>
+											<div class="offer_btns">
+												<button>
+													<span class="glyphicon glyphicon-shopping-cart"></span><span> ADD TO CART</span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-heart-empty"></span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-random"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide_content">
+								<div class="col-md-6 col-sm-6 fslide">
+									<div class="left_side clearfix col-md-12">
+										<div class="frst_img_block"></div>
+										<div class="offer_desc">
+											<span class="star_rating" >
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</span>
+											<h5>Volkspark Bokel</h5>
+											<p>5,00 €</p>
+											<div class="offer_btns">
+												<button>
+													<span class="glyphicon glyphicon-shopping-cart"></span><span> ADD TO CART</span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-heart-empty"></span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-random"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="left_side clearfix col-md-12">
+										<div class="scnd_img_block"></div>
+										<div class="offer_desc">
+											<span class="star_rating" >
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</span>
+											<h5>Volkspark Bokel</h5>
+											<p>5,00 €</p>
+											<div class="offer_btns">
+												<button>
+													<span class="glyphicon glyphicon-shopping-cart"></span><span> ADD TO CART</span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-heart-empty"></span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-random"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 fslide">
+									<div class="left_side clearfix col-md-12">
+										<div class="frth_img_block"></div>
+										<div class="offer_desc">
+											<span class="star_rating" >
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</span>
+											<h5>Volkspark Bokel</h5>
+											<p>5,00 €</p>
+											<div class="offer_btns">
+												<button>
+													<span class="glyphicon glyphicon-shopping-cart"></span><span> ADD TO CART</span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-heart-empty"></span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-random"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="left_side clearfix col-md-12">
+										<div class="thrd_img_block"></div>
+										<div class="offer_desc">
+											<span class="star_rating" >
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</span>
+											<h5>Volkspark Bokel</h5>
+											<p>5,00 €</p>
+											<div class="offer_btns">
+												<button>
+													<span class="glyphicon glyphicon-shopping-cart"></span><span> ADD TO CART</span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-heart-empty"></span>
+												</button>
+												<button>
+													<span class="glyphicon glyphicon-random"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-3">
+							<div class="flogo">
+								<a href="#"><img src="img/footer_logo.png" alt="logo FishHunter"></a>
+								<p>© FishHunter - 2016</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3 col-xs-6">
+							<div class="footer_contact">
+								<h5>KONTAKT</h5>
+								<p>Kontaktiere uns!</p>
+								<a href="#">kontakt@fishhunter.de</a>
+							</div>
+						</div>
+						<div class="col-md-offset-1 col-md-2 col-sm-offset-1 col-sm-2 col-xs-6">
+							<div class="footer_contact">
+								<h5>INFORMATION</h5>
+								<p>ABB</p>
+								<p>Datenschutz</p>
+								<p>Impressum</p>
+								<p>Advanced Search</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
+		<script src="libs/mixitup/mixitup.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+	</html>
